@@ -11,11 +11,12 @@ This file is provided as an example development environment using Mage Inferno M
 ## Company Setup
 
 Follow this steps to setup a already m2 repository for company:
+```
 Set M2SETUP_USE_ARCHIVE = false
 Set M2SETUP_USE_CUSTOM_REPOSITORY = true
 Set M2SETUP_COMPANY = 'company_name' (git company or user)
 Set M2SETUP_CUSTOM_REPOSITORY = 'repository_name'
-
+```
 ## Composer Setup
 
 Uncomment the composer line from `appdata` to mount a `.composer` directory to the `www-data` user home directory. Please first setup Magento Marketplace authentication (details at <a href="http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html" target="_blank">http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html</a>).
