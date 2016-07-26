@@ -15,7 +15,7 @@ appdata:
   image: tianon/true
   volumes:
     - /srv/www
-#    - ~/.composer:/var/www/.composer
+    - ~/.composer:/var/www/.composer
 #    - ./www/app/code:/srv/www/app/code
 
 phpfpm:
@@ -62,8 +62,8 @@ setup:
     - M2SETUP_ADMIN_PASSWORD=magento2
     - M2SETUP_VERSION=2.1.0
     - M2SETUP_USE_SAMPLE_DATA=false
-    - M2SETUP_USE_ARCHIVE=false
-    - M2SETUP_USE_CUSTOM_REPOSITORY=true
+    - M2SETUP_USE_ARCHIVE=true
+    - M2SETUP_USE_CUSTOM_REPOSITORY=false
     - M2SETUP_COMPANY=chaordic
     - M2SETUP_CUSTOM_REPOSITORY=solo
-    - M2SETUP_CUSTOM_REPOSITORY_TOKEN=4da5281ba5efca7a06db8ce704f773126c95eb64
+    - M2SETUP_CUSTOM_REPOSITORY_TOKEN=0a38cfd43a8365aa11fc2a45401ff2ef013786e5
